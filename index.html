@@ -21,183 +21,112 @@
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
-
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.min.css">
-	<link rel="stylesheet" href="css/index.min.css">
 </head>
 
 <body>
 	<header>
-		<div class="header">
-		<div class="header__left">
-			<div class="popup-handler-box">
-			<a id="request-call" class="popup-handler collapse" href="#callback">Звонок с сайта</a>
-			</div>
-			<div class="logo">					
-				<a href="#"> 
-				<img src="img/logo.png" alt="сруб мордовия"></a>
-			</div>
-		</div>		
-		<div class="header__right">
-		
-		<nav id="nav" class="collapse">
-		<ul>
-			<li id="homelink" class="collapse"><a href="">Главная</a></li>
-			<li><a href="">Проекты</a></li>
-			<li><a href="">Цены</a></li>
-			<li><a href="">Услуги</a></li>
-			<li><a href="">Портфолио</a></li>
-			<li><a href="">Вопросы заказчиков</a></li>
-		</ul>
-		<div class="phone">
-			<small>Вы можете проконсультироваться с нами по телефону:
-			<a href="tel:+79061647710">+7&nbsp;(906)&nbsp;164&nbsp;77&nbsp;10</a></small>
-						</div>
-	</nav>	
-		<div class="hamburger hamburger--spin">
-  		<div class="hamburger-box">
-    		<div class="hamburger-inner"></div>
-  		</div>
-		</div>
-	
-	</div></div>		
+		<div class="logo">Логотип</div>			
 	</header> 
 	
 	
 	<main>
-		<article>
-			<div class="banner"></div>
-			<section class="company">
-			<h1 class="lead">Сруб дома и бани без посредников</h1>
-			<div class="desc">
-			<p class="desc">Компания суперсруб изготавливает <strong>срубы ручной рубки</strong></p> 
-			<p>Занимаемся <strong>строительством деревянных домов и бань</strong> более 20 лет.</p> <p>Работаем по договору, используя наличный и безналичный расчет.</p></div>
+	<article>
+		<section class="main-banner">
+			<h1>Срубы на заказ</h1>
+			<div class="desc">без посредников</div>
+			<div class="phone"><a href="tel:+79271777400">89271777400</a></div>
 		</section>
-		<section class="rubka">
-			<h2>Виды ручной рубки</h2>
-			<div class="rubka__box">
-				<div class="rubka__view">
-					<img src="img/index/nkurdchasha.jpg" alt="">
-					<div class="rubka__descbox">
-						<h3>Нижняя курдючная чаша</h3>
-						<a href="#">Подробнее</a>
-					</div>
-				</div>
-				<div class="rubka__view">
-					<img src="img/index/vkurdchasha.jpg" alt="">
-					<div class="rubka__descbox">
-						<h3>Верхняя курдючная чаша</h3>
-						<a href="#">Подробнее</a>
-					</div>
-				</div>
-				<div class="rubka__view">
-					<img src="img/index/ruschacha.jpg" alt="">
-					<div class="rubka__descbox">
-						<h3>В русскую чашу</h3>
-						<a href="#">Подробнее</a>
-					</div>
-				</div>
-				<div class="rubka__view">
-					<img src="img/index/kanada.jpg" alt="">
-					<div class="rubka__descbox">
-						<h3>Канадская рубка</h3>
-						<a href="#">Подробнее</a>
-					</div>
-				</div>
-				<div class="rubka__view">
-					<img src="img/index/last-hvost.jpg" alt="">
-					<div class="rubka__descbox">
-						<h3>В ласточкин хвост</h3>
-						<a href="#">Подробнее</a>
-					</div>
-				</div>
-				<div class="rubka__view">
-					<img src="" alt="">
-					<div class="rubka__descbox">
-						<h3>В лапу</h3>
-						<a href="#">Подробнее</a>
-					</div>
-				</div>
+		<section class="difference s-black">
+			<p class="strong">Быстро, качественно, недорого изготовим сруб ручной из соснового бревна под рубанок.</p>
+			<ul>
+				<li>владеем всеми видами рубки</li>
+				<li>собственное производство</li>
+				<li>опыт работы более 20 лет</li>
+			</ul>
+			<p class="strong">Выполним заказ любой сложности</p>
+		</section>
+		<section>
+			<div id="calcform" data-percent="25">
+		<h2>Расчет стоимости сруба</h2>
+		<form action="#">			
+		<div class="calc">
+			<div class="size">
+			<h4>Размеры сруба</h4>			
+				<p>
+					<label for="srub-long">Длинна, м</label>
+					<input type="number" id="srub-long" placeholder="Длинна коробки сруба в метрах" min="3" value="3">
+				</p>
+				<p>
+					<label for="srub-width">Ширина, м</label>
+					<input type="number" id="srub-width" placeholder="Ширина коробки сруба в метрах" min="3" value="3">
+				</p>
+				<p>
+					<label for="srub-height">Высота, м</label>
+					<input type="number" id="srub-height" placeholder="Высота коробки сруба в метрах" min="2" value="2.5" step="0.5">
+				</p></div>
+			<div class="conf">	
+			<h4>Конфигурация сруба</h4>
+					<p><input class="checkbox" type="checkbox" id="kapital-long"><label for="kapital-long"> Капитальная стена по длинне сруба, м</label>
+					</p>
+					<p><input class="checkbox" type="checkbox" id="kapital-width"><label for="kapital-width">Капитальная стена по ширине сруба, м</label>
+					</p>
+					<p><input class="checkbox" type="checkbox" id="fronton"><label for="fronton">Наличие фронтона</label>
+					</p>
+					<p class="frontonchecked"><label for="fronton-height">Высота фронтона, м</label>
+					<input type="number" id="fronton-height" placeholder="Высота фронтона в метрах" disabled min="1.5" value="1.5" step="0.5"></p>
+					<p><label for="diametr">Диаметр бревна, мм</label>
+					<select id="diametr">
+						<option value="2200">до 180 мм</option>
+						<option value="2400">180-200 мм</option>
+						<option value="2600">200-220 мм</option>
+						<option value="2800">220-240 мм</option>
+						<option selected value="3000">240-260 мм</option>
+						<option value="3200">260-280 мм</option>
+						<option value="3400">280-300 мм</option>
+						<option value="3600">300-320 мм</option>
+						<option value="3800">320-340 мм</option>
+						<option value="4000">340-360 мм</option>
+						<option value="4200">360-380 мм</option>
+						<option value="4400">380-400 мм</option>
+					</select></p>
+			</div></div>
+			<div class="total">
+			<div class="total-img">
+				<img class="active" src="img/1.png" alt="">
+				<img class="no-img" src="img/2.png" alt="">
+				<img class="no-img" src="img/3.png" alt="">
+				<img class="no-img" src="img/4.png" alt="">
+				<img class="no-img" src="img/5.png" alt="">
+				<img class="no-img" src="img/6.png" alt="">
+				<img class="no-img" src="img/7.png" alt="">
+				<img class="no-img" src="img/8.png" alt="">
 			</div>
-		</section>
-		<section class="work">
-			<h3>Секция работа на площадках</h3>
-			<p>Мы работаем на нескольких площадках тру-ля-ля (фотки с площадок)</p>
+			<p>Цена за рубку: <strong id="total-price">100000 руб.</strong></p>
+			<p>Цена за установку: <strong id="total-install">30000 руб.</strong></p>
+		</div>
+		</form>
+	</div>	
 		</section>
 		<section class="portfolio">
-			<h3>Секция построенные срубы</h3>
-			<p>Слайдер из нескольких фото с описанием. Дом - город, что делали</p>
+			<h2>Наши работы</h2>
+			<div class="galary">
+				<div class="photo"><img src="img/01.jpg"></div>
+				<div class="photo"><img src="img/02.jpg"></div>
+				<div class="photo"><img src="img/03.jpeg"></div>
+				<div class="photo"><img src="img/04.jpeg"></div>
+				<div class="photo"><img src="img/05.jpeg"></div>
+				<div class="photo"><img src="img/06.jpeg"></div>
+				<div class="photo"><img src="img/07.jpeg"></div>
+				<div class="photo"><img src="img/08.jpeg"></div>
+				<div class="photo"><img src="img/09.jpeg"></div>
+				<div class="photo"><img src="img/10.jpeg"></div>
+			</div>
 		</section>
-		<section class="price">
-			<h3>Секция цена</h3>
-			<p>Картинка цена от 2500 т.р. за 1 квадратный метр. Описание: конечная цена зависит от вида рубки, диаметра бревна и размеров. Примерную цену коробки вы можете расчитать с помощью on-line калькулятора</p>
-		</section>
-			<section>
-		<section class="zakaz">
-			<h3>Секция как заказать сруб</h3>
-			<p>В виде схемы шаги заказа</p>
-		</section>
-		<section class="ask">
-			<h3>Ответы на ваши вопросы</h3>
-			<p>Список типичных вопросов, которые задают заказчики и ответы на них. Например: Сколько стоит доставка? Вы делаете дом под ключ? Какая цена на установку готового сруба? Штук 5 остальные будут в разделе сайта Вопросы заказчиков. Их будем переодически выкладывать в соц. сети.</p>
-		</section>
-			<section>
-			<section>
-					<p>Общие наметки: Оставить заявку на сайте в прежнем виде не будем делать, чтоб письмо на почту приходило. Сейчас есть такая фишка (обратный звонок) Заказчик оставляет номер телефона, автоматически идет дозвон на привязанный номер. Там говорят пришла заявка с сайта. Высвечивается номер и дальше идет работа с клиентом.</p>
-					<p>При составлении текста нужно использовать ключевые слова в нем. Слишком много тоже плохо. Я подумал над продвижением и набрасал техт по которыму будем продвигать:</p>
-					<p>Название страницы в поисковой выдаче. Строительство деревянных домов и бань (сруб без посредников).</p>
-					<p>Описание страницы в поисковой выдаче Суперсруб - сруб без посредников. Строительство деревянных домов и бань в Мордовии.  Мы предлагаем купить сруб дома и бани ручной рубки. Цена от 2500. Доставка по городам Москва, Московская область, Пенза, Рязань, Самара, Саратов, Нижний Новгород. Коряво, но это ключи для поисковых роботов. Все слова, которые написаны здесь ключевые для поиска, обычные слова для логичного текста здесь нужно использовать как можно меньше, так как поисковики эти обычные слова будут считать ключевыми</p>
-					<p>Это для роботов их на сайте видно не будет, а для людей обычный логичный текст, желательно что бы все эти слова выше были использованы хотя бы раз, а лучше если в заголовках секций.</p>
-					<p>Пока как то так. Посмотрите сайт на разных устройствах, как отображается. Под старые браузеры верстку не планировал.</p>
-				</section>
-			</article>			
+	<article>
 	</main>
 	<footer>
-				<section class="contakt">
-				<h1>Будем рады видеть Вас в нашем офисе</h1>	
-				<div class="contakt__iner">
-					<div class="contakt__img">
-						<img src="img/DSC_1278-1s.jpg">
-					</div>
-					<div class="contakt__desc">			
-						<div class="phone">
-							<a href="tel:+79061647710"><span>+7&nbsp;(906)&nbsp;164&nbsp;77&nbsp;10</span></a>
-						</div>
-						<div class="messanger">
-							<div class="messanger-whatsapp">
-								<a href="whatsapp://send?phone=+79061647710"><img src="img/whatsapp.svg"></a>
-							</div>
-							<div class="messanger-viber">
-								<a href="viber://add?number=+79061647710"><img src="img/viber.svg"></a>
-							</div>
-							<div class="messanger-phone">
-								<a href="tel:+79061647710"><img src="img/phone.svg"></a>
-							</div>
-						</div>
-						<div class="mail-box">
-							<a href="malto: andrej1701@yandex.ru"><img src="img/mail.svg"> andrej1701@yandex.ru</a>
-						</div>
-						<div class="social">
-							<p>Мы в соцсетях:</p>
-							<div class="social__icons">
-								<div class="social-vk">
-									<a href="#"><img src="img/VK.svg"></a>
-								</div>
-								<div class="social-youtube">
-									<a href="#"><img src="img/youtube-small.svg"></a>
-								</div>
-								<div class="social-instagram">
-									<a href="#"><img src="img/instagram.svg"></a>
-								</div>
-							</div>
-						</div>
-						<div class="adres">
-							<p>Пионерская ул., 50, Зубова Поляна, Респ. Мордовия, 431110</p>
-						</div>
-					</div>
-				</div>					
-			</section>
-			<section><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18730.364800361946!2d42.817237602595206!3d54.06850102873166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4147b34b1a563d6b%3A0x2350d646d7b6c312!2z0KHRgNGD0LEg0JzQvtGA0LTQvtCy0LjRjw!5e0!3m2!1sru!2sru!4v1564922040813!5m2!1sru!2sru"></iframe></section>
 	</footer>
 	<script src="js/scripts.min.js"></script>
 
